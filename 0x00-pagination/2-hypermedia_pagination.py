@@ -55,4 +55,3 @@ class Server:
         response["prev_page"] = None if start == 0 else start // page_size - 1
         response["total_pages"] = math.ceil(len(self.dataset()) / page_size)
         return response
-clea
